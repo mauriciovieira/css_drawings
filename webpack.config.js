@@ -11,6 +11,10 @@ const config = {
       {
         test: /\.pug/,
         use: ['pug-loader']
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       }
     ]
   }
