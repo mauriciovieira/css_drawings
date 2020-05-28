@@ -1,0 +1,71 @@
+/*-----------------------------
+https://github.com/lynnandtonic/a-single-div/blob/master/_styl/components/entry.styl
+Entry styles
+-----------------------------*/
+
+.entry
+  text-align: center
+  min-height: 400px
+  position: relative
+
+  &.short
+    min-height: 320px
+
+  &.tall
+    min-height: 450px
+
+  // &.tiny
+  //   min-height: 200px
+
+  div
+    position: absolute
+    left: 50%
+    top: 50%
+
+    &:before, &:after
+      display: block
+      content: ''
+      position: absolute
+
+.cf
+  &:before,
+  &:after
+    content: " "
+    display: table
+
+  &:after
+    clear: both
+
+
+@media (max-width: 400px)
+
+  .entry div:not(.no-scale)
+    transform: scale(.8)
+
+@media all and (min-width: 650px) and (max-width: 959px)
+
+  .entry
+    float: left
+    width: 100%
+
+    &.fours,
+    &.six
+      width: 50%
+
+@media all and (min-width: 960px)
+
+  .entry
+    float: left
+    width: 50%
+
+    &.wide
+      width: 100%
+
+    &.threes
+      width: 33.333%
+
+    &.fours
+      width: 25%
+
+    &.six
+      width: 33.333%

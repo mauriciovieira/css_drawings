@@ -1,0 +1,41 @@
+/*-----------------------------
+https://github.com/lynnandtonic/a-single-div/blob/master/_styl/components/header.styl
+Header and global styles
+-----------------------------*/
+
+header
+  padding: 10px 15px 7px
+  position: relative
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  background: #333
+  color: white
+  font-family: Roboto, Arial, serif
+  font-size: 20px
+  line-height: 1.2
+  z-index: 10
+
+  h1, p
+    display: inline-block
+
+  h1
+    max-width: 55%
+    margin-bottom: 5px
+    margin-right: auto
+
+    span
+      color: #bed4dc
+
+    a
+      color: #67b1cd
+
+  a
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline
+
+  & > a
+    margin-left: 20px
+    color: white
