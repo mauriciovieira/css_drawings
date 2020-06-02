@@ -1,0 +1,49 @@
+/*
+  https://github.com/lynnandtonic/a-single-div/blob/master/_styl/entries/button.styl
+
+  Button
+*/
+
+#jake_the_dog
+  background: #f9c029
+
+  .head
+    width: 310px
+    height: 358px
+    margin-left: -(@width/2)
+    margin-top: -(@height/2)
+    border: 3px solid #111
+    transform: rotate(-20deg)
+    border-radius: 500px
+
+  .eyes:before, .eyes:after
+    z-index: 2
+    width: 90px
+    height: 90px
+    background: black
+    border: 1px solid #111
+    border-radius: 50%
+
+  .eyes:before
+      top: -105px
+      left: -80px
+
+  .eyes:after
+      top: -95px
+      left: 80px
+
+  .pupils:before, .pupils:after
+    z-index: 3
+    width: 75px
+    height: 75px
+    background: white
+    border: 1px solid #111
+    border-radius: 50%
+
+  .pupils:before
+    top: -103px
+    left: -70px
+
+  .pupils:after
+    top: -93px
+    left: 90px
